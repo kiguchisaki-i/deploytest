@@ -23,5 +23,7 @@ jobs:
                   server-dir: ${{ secrets.FTP_SERVER_DIR }}
                   
 permissions:
-  contents: read
-  pages: write
+    contents: read
+    pages: write
+
+    #test
