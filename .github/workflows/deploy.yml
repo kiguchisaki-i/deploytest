@@ -22,3 +22,6 @@ jobs:
                   password: ${{ secrets.FTP_PASSWORD }}
                   server-dir: ${{ secrets.FTP_SERVER_DIR }}
                   
+permissions:
+  contents: read
+  pages: write
