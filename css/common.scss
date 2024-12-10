@@ -1,5 +1,5 @@
 :root {
-    --font-color: #001726;
+    --font-color: #06314d;
     --border-color: #5c7d92;
     --primary: #afe9f3;
 }
@@ -107,7 +107,6 @@ table {
 
             ul {
                 align-items: center;
-                padding: 0 48px;
                 height: 100%;
             }
             
@@ -154,16 +153,12 @@ table {
                 }
             }
         }
-
-        a{
-            padding: 0 48px;
-        }
     }
     .header__shopping-list{
         display: grid;
         gap: 16px;
         grid-template-columns: repeat(3, 1fr);
-        padding-right: 0;
+        padding-left: 48px;
         border-left: 1px solid var(--border-color);
     }
 }

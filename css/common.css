@@ -1,5 +1,5 @@
 :root {
-  --font-color: #001726;
+  --font-color: #06314d;
   --border-color: #5c7d92;
   --primary: #afe9f3;
 }
@@ -110,7 +110,6 @@ table {
   }
   .header__inner nav ul {
     align-items: center;
-    padding: 0 48px;
     height: 100%;
   }
   .header__inner nav a {
@@ -147,14 +146,11 @@ table {
   .header__info-list li:last-of-type a {
     padding-right: 0;
   }
-  .header__info-list a {
-    padding: 0 48px;
-  }
   .header__shopping-list {
     display: grid;
     gap: 16px;
     grid-template-columns: repeat(3, 1fr);
-    padding-right: 0;
+    padding-left: 48px;
     border-left: 1px solid var(--border-color);
   }
 }/*# sourceMappingURL=common.css.map */
