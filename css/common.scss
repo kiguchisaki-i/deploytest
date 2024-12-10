@@ -253,6 +253,7 @@ header {
 @media screen and (max-width: 768px) {
     .header__inner {
         position: relative;
+        padding: clamp(12px, 2.67vw, 14px) 0px;
 
         .row {
             display: flex;
