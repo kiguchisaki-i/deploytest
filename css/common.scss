@@ -1,5 +1,6 @@
 :root {
     --font-color: #001726;
+    --border-color: #5c7d92;
     --primary: #afe9f3;
 }
 html {
@@ -71,17 +72,25 @@ table {
 
 @media screen and (min-width: 769px) {
     .header__inner {
-        height: 128px;
+        height: 144px;
         display: flex;
         align-items: center;
         justify-content: center;
+        border-bottom: 1px solid var(--border-color);
 
         .row {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            height: 100%;
         }
         h1 {
+            padding-right: 56px;
+            border-right: 1px solid var(--border-color);
+            height: 100%;
+            display: flex;
+            justify-content: center;
+
             img {
                 height: 72px;
             }
