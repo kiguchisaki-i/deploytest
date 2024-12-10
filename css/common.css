@@ -74,7 +74,6 @@ table {
 
 .row {
   width: min(100%, 1380px);
-  padding: 0 40px;
   margin: 0 auto;
 }
 
@@ -83,9 +82,14 @@ table {
     padding: 0 40px;
   }
 }
-@media screen and (max-width: 1200px) and (min-width: 768px) {
+@media screen and (max-width: 1200px) and (min-width: 769px) {
   .row {
     padding: 0 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .row {
+    padding: 0 18px;
   }
 }
 header {
@@ -183,7 +187,7 @@ header {
     height: 24px;
   }
 }
-@media screen and (max-width: 1200px) and (min-width: 768px) {
+@media screen and (max-width: 1200px) and (min-width: 769px) {
   .header__inner {
     height: clamp(80px, 9.77vw, 122px);
   }
