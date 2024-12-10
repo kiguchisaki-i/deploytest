@@ -278,7 +278,9 @@ header {
             justify-content: space-between;
         }
         h1 {
-            height: clamp(44px, 12vw, 75px);
+            img{
+                height: clamp(44px, 12vw, 75px);
+            }
         }
         nav {
             display: contents;
