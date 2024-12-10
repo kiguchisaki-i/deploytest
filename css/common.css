@@ -268,6 +268,17 @@ header {
     transition: 0.6s ease-out;
     z-index: -1;
     opacity: 0;
+    padding: 0 18px;
+    display: flex;
+    flex-direction: column;
+  }
+  .header__info-list li:last-of-type a {
+    border-bottom: 0;
+  }
+  .header__info-list a {
+    font-size: 1.3rem;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-color);
   }
   .header__info-list.is-active {
     z-index: 1;

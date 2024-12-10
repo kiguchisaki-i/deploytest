@@ -301,6 +301,23 @@ header {
         transition: .6s ease-out;
         z-index: -1;
         opacity: 0;
+        padding: 0 18px;
+        display: flex;
+        flex-direction: column;
+
+        li{
+            &:last-of-type{
+                a{
+                    border-bottom: 0;
+                }
+            }
+        }
+
+        a{
+            font-size: 1.3rem;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
 
         &.is-active{
             z-index: 1;
