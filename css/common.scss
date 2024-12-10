@@ -281,7 +281,14 @@ header {
         }
     }
     .header__btn {
+        width: clamp(24px, 6.67vw, 32px);
+        height: clamp(24px, 6.67vw, 32px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
         span {
+            display: block;
             height: 1px;
             width: 100%;
             background-color: var(--font-color);
