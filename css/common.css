@@ -69,4 +69,18 @@ table {
   width: min(100%, 1380px);
   padding: 0 40px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 769px) {
+  .header__inner .row {
+    display: grid;
+    grid-template-columns: 440px auto;
+    gap: 40px;
+  }
+  .header__inner h1 img {
+    height: 40px;
+  }
+  .header__inner nav a {
+    font-size: 1.5rem;
+  }
 }/*# sourceMappingURL=common.css.map */
