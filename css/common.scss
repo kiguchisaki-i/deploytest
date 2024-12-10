@@ -221,6 +221,13 @@ table {
                 }
             }
         }
+        .header__info-list{
+            li{
+                &:first-of-type{
+                    padding-right: 10px;
+                }
+            }
+        }
         .header__shopping-list{
             padding-left: clamp(24px, 3.13vw, 48px);
             gap: clamp(16px, 3.13vw, 32px);
