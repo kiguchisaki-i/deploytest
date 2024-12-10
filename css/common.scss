@@ -33,6 +33,7 @@ img {
     display: block;
     width: auto;
     height: auto;
+    max-width: 100%;
 }
 iframe {
     aspect-ratio: 16/9;
@@ -87,7 +88,7 @@ table {
             height: 100%;
         }
         h1 {
-            padding-right: 56px;
+            
             border-right: 1px solid var(--border-color);
             height: 100%;
             display: flex;
@@ -110,7 +111,7 @@ table {
             }
 
             a {
-                font-size: 1.5rem;
+                
                 letter-spacing: 0.08em;
                 height: 40px;
                 min-width: 44px;
@@ -170,6 +171,12 @@ table {
         .row {
             grid-template-columns: 268px auto;
         }
+
+        nav{
+            a{
+                font-size: 1.5rem;
+            }
+        }
     }
 }
 
@@ -178,7 +185,13 @@ table {
         height: 122px;
 
         .row {
-            grid-template-columns: 130px auto;
+            grid-template-columns: 114px auto;
+        }
+
+        nav{
+            a{
+                font-size: clamp(1.3rem, 1.27vw, 1.5rem);
+            }
         }
     }
 }

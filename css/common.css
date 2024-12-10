@@ -35,6 +35,7 @@ img {
   display: block;
   width: auto;
   height: auto;
+  max-width: 100%;
 }
 
 iframe {
@@ -90,7 +91,6 @@ table {
     height: 100%;
   }
   .header__inner h1 {
-    padding-right: 56px;
     border-right: 1px solid var(--border-color);
     height: 100%;
     display: flex;
@@ -111,7 +111,6 @@ table {
     height: 100%;
   }
   .header__inner nav a {
-    font-size: 1.5rem;
     letter-spacing: 0.08em;
     height: 40px;
     min-width: 44px;
@@ -161,12 +160,18 @@ table {
   .header__inner .row {
     grid-template-columns: 268px auto;
   }
+  .header__inner nav a {
+    font-size: 1.5rem;
+  }
 }
 @media screen and (max-width: 1200px) and (min-width: 768px) {
   .header__inner {
     height: 122px;
   }
   .header__inner .row {
-    grid-template-columns: 130px auto;
+    grid-template-columns: 114px auto;
+  }
+  .header__inner nav a {
+    font-size: clamp(1.3rem, 1.27vw, 1.5rem);
   }
 }/*# sourceMappingURL=common.css.map */
