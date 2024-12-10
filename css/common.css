@@ -1,6 +1,6 @@
 :root {
   --font-color: #001726;
-  --primary: #AFE9F3;
+  --primary: #afe9f3;
 }
 
 html {
@@ -25,7 +25,8 @@ html {
   display: block;
 }
 
-picture, img {
+picture,
+img {
   display: block;
   width: auto;
   height: auto;
@@ -73,12 +74,16 @@ table {
 
 @media screen and (min-width: 769px) {
   .header__inner .row {
-    display: grid;
-    grid-template-columns: 440px auto;
-    gap: 40px;
+    display: flex;
+    justify-content: space-between;
   }
   .header__inner h1 img {
     height: 40px;
+  }
+  .header__inner nav ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
   }
   .header__inner nav a {
     font-size: 1.5rem;

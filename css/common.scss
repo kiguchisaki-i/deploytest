@@ -1,13 +1,13 @@
-:root{
+:root {
     --font-color: #001726;
-    --primary: #AFE9F3;
+    --primary: #afe9f3;
 }
-html{
+html {
     scroll-behavior: smooth;
     font-size: 62.5%;
     touch-action: manipulation;
 }
-*{
+* {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -17,69 +17,77 @@ html{
     font-weight: normal;
     color: var(--font-color);
     font-kerning: auto;
-    font-family: 'Noto Sans JP', 'Inter', sans-serif;
+    font-family: "Noto Sans JP", "Inter", sans-serif;
 
-        &::before,&::after{
-            display: block;
-        }
+    &::before,
+    &::after {
+        display: block;
+    }
 }
-picture,img{
+picture,
+img {
     display: block;
     width: auto;
     height: auto;
 }
-iframe{
+iframe {
     aspect-ratio: 16/9;
     background-color: #ccc;
 }
-button{
+button {
     background-color: transparent;
     border: none;
     cursor: pointer;
     appearance: none;
     display: block;
 }
-a{
-    &:has(picture),&:has(img){
+a {
+    &:has(picture),
+    &:has(img) {
         display: block;
     }
 }
-details{
-    summary{
+details {
+    summary {
         list-style: none;
 
-        &::-webkit-details-marker{
+        &::-webkit-details-marker {
             display: none;
         }
     }
 }
-table{
+table {
     border-collapse: collapse;
 }
-:target{
+:target {
     scroll-margin-top: 100px;
 }
 
-.row{
+.row {
     width: min(100%, 1380px);
     padding: 0 40px;
     margin: 0 auto;
 }
 
-@media screen and (min-width: 769px){
-    .header__inner{
-        .row{
-            display: grid;
-            grid-template-columns: 440px auto;
-            gap: 40px;
+@media screen and (min-width: 769px) {
+    .header__inner {
+        .row {
+            display: flex;
+            justify-content: space-between;
+            
         }
-        h1{
-            img{
+        h1 {
+            img {
                 height: 40px;
             }
         }
-        nav{
-            a{
+        nav {
+            ul {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 40px;
+            }
+            a {
                 font-size: 1.5rem;
             }
         }
