@@ -73,18 +73,18 @@ table {
     padding: 0 40px;
     margin: 0 auto;
 }
-@media screen and (min-width: 1201px){
-    .row{
+@media screen and (min-width: 1201px) {
+    .row {
         padding: 0 40px;
     }
 }
-@media screen and (max-width: 1200px) and (min-width: 768px){
-    .row{
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+    .row {
         padding: 0 24px;
     }
 }
 
-header{
+header {
     position: sticky;
     top: 0;
     left: 0;
@@ -107,13 +107,10 @@ header{
             height: 100%;
         }
         h1 {
-            
             border-right: 1px solid var(--border-color);
             height: 100%;
             display: flex;
             align-items: center;
-
-            
         }
         nav {
             display: flex;
@@ -177,21 +174,19 @@ header{
 @media screen and (min-width: 1201px) {
     .header__inner {
         height: 144px;
-        
 
         .row {
             grid-template-columns: 268px auto;
         }
 
-        h1{
-            
+        h1 {
             img {
                 height: 72px;
             }
         }
 
-        nav{
-            a{
+        nav {
+            a {
                 font-size: 1.5rem;
                 min-width: 44px;
 
@@ -212,31 +207,31 @@ header{
             grid-template-columns: calc(clamp(56px, 6.45vw, 78px) + 18px) auto;
         }
 
-        h1{
-            img{
+        h1 {
+            img {
                 height: clamp(56px, 6.45vw, 78px);
             }
         }
 
-        nav{
-            a{
-                font-size: clamp(1.3rem, 1.27vw, 1.5rem);
+        nav {
+            a {
+                font-size: clamp(1.3rem, 1.46vw, 1.5rem);
                 min-width: clamp(18px, 1.76vw, 22px);
-                
-                img{
+
+                img {
                     width: clamp(18px, 1.76vw, 22px);
                     height: clamp(18px, 1.76vw, 22px);
                 }
             }
         }
-        .header__info-list{
-            li{
-                &:first-of-type{
+        .header__info-list {
+            li {
+                &:first-of-type {
                     padding-right: 10px;
                 }
             }
         }
-        .header__shopping-list{
+        .header__shopping-list {
             padding-left: clamp(24px, 3.13vw, 48px);
             gap: clamp(16px, 3.13vw, 32px);
         }

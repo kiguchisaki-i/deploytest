@@ -194,7 +194,7 @@ header {
     height: clamp(56px, 6.45vw, 78px);
   }
   .header__inner nav a {
-    font-size: clamp(1.3rem, 1.27vw, 1.5rem);
+    font-size: clamp(1.3rem, 1.46vw, 1.5rem);
     min-width: clamp(18px, 1.76vw, 22px);
   }
   .header__inner nav a img {
