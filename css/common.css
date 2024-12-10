@@ -238,7 +238,6 @@ header {
 @media screen and (max-width: 768px) {
   .header__inner {
     position: relative;
-    padding: clamp(12px, 2.67vw, 14px) 0px;
   }
   .header__inner .row {
     display: flex;
@@ -246,6 +245,7 @@ header {
   }
   .header__inner h1 {
     width: clamp(130px, 35.56vw, 220px);
+    padding: clamp(12px, 2.67vw, 14px) 0px;
   }
   .header__inner nav {
     display: contents;
@@ -256,6 +256,8 @@ header {
   .header__shopping-list {
     margin-left: auto;
     gap: clamp(8px, 2.22vw, 16px);
+    border-right: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
   }
   .header__shopping-list a img {
     width: clamp(18px, 4.44vw, 24px);
