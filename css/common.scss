@@ -94,9 +94,7 @@ table {
             display: flex;
             align-items: center;
 
-            img {
-                height: 72px;
-            }
+            
         }
         nav {
             display: flex;
@@ -160,9 +158,16 @@ table {
 @media screen and (min-width: 1201px) {
     .header__inner {
         height: 144px;
+        
 
         .row {
             grid-template-columns: 268px auto;
+        }
+
+        h1{
+            img {
+                height: 72px;
+            }
         }
 
         nav{
@@ -181,10 +186,16 @@ table {
 
 @media screen and (max-width: 1200px) and (min-width: 768px) {
     .header__inner {
-        height: 122px;
+        height: clamp(80px, 9.77vw, 122px);
 
         .row {
             grid-template-columns: 114px auto;
+        }
+
+        h1{
+            img{
+                width: 100%;
+            }
         }
 
         nav{
@@ -200,6 +211,7 @@ table {
         }
         .header__shopping-list{
             padding-left: clamp(24px, 3.91vw, 48px);
+            gap: clamp(16px, 3.13vw, 32px);
         }
     }
 }

@@ -96,9 +96,6 @@ table {
     display: flex;
     align-items: center;
   }
-  .header__inner h1 img {
-    height: 72px;
-  }
   .header__inner nav {
     display: flex;
     align-items: center;
@@ -155,6 +152,9 @@ table {
   .header__inner .row {
     grid-template-columns: 268px auto;
   }
+  .header__inner h1 img {
+    height: 72px;
+  }
   .header__inner nav a {
     font-size: 1.5rem;
     min-width: 44px;
@@ -166,10 +166,13 @@ table {
 }
 @media screen and (max-width: 1200px) and (min-width: 768px) {
   .header__inner {
-    height: 122px;
+    height: clamp(80px, 9.77vw, 122px);
   }
   .header__inner .row {
     grid-template-columns: 114px auto;
+  }
+  .header__inner h1 img {
+    width: 100%;
   }
   .header__inner nav a {
     font-size: clamp(1.3rem, 1.27vw, 1.5rem);
@@ -181,5 +184,6 @@ table {
   }
   .header__inner .header__shopping-list {
     padding-left: clamp(24px, 3.91vw, 48px);
+    gap: clamp(16px, 3.13vw, 32px);
   }
 }/*# sourceMappingURL=common.css.map */
