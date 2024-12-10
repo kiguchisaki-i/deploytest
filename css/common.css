@@ -104,6 +104,7 @@ table {
   .header__inner nav {
     display: flex;
     align-items: center;
+    justify-content: end;
     height: 100%;
     width: 100%;
   }
@@ -127,9 +128,15 @@ table {
   }
   .header__info-list {
     display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    width: 100%;
   }
   .header__info-list li {
     border-right: 1px solid var(--border-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .header__info-list li:first-of-type a {
     padding-left: 0;
