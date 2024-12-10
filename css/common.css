@@ -238,14 +238,14 @@ header {
 @media screen and (max-width: 768px) {
   .header__inner {
     position: relative;
+    height: calc(clamp(44px, 12vw, 75px) + clamp(12px, 2.67vw, 14px));
   }
   .header__inner .row {
     display: flex;
     justify-content: space-between;
   }
-  .header__inner h1 {
+  .header__inner h1 img {
     height: clamp(44px, 12vw, 75px);
-    padding: clamp(12px, 2.67vw, 14px) 0px;
   }
   .header__inner nav {
     display: contents;
@@ -258,6 +258,7 @@ header {
     gap: clamp(8px, 2.22vw, 16px);
     border-right: 1px solid var(--border-color);
     border-left: 1px solid var(--border-color);
+    margin-right: 24px;
   }
   .header__shopping-list a img {
     width: clamp(18px, 4.44vw, 24px);
