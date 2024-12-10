@@ -1,4 +1,35 @@
 .index__mv picture, .index__mv img {
   width: 100%;
   height: auto;
+}
+.index__mv .slick-dots {
+  position: relative;
+  bottom: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.index__mv .slick-dots li {
+  margin: 0;
+}
+
+@media screen and (min-width: 769px) {
+  .index__mv .slick-dots {
+    margin-top: 16px;
+    gap: 4px;
+  }
+  .index__mv .slick-dots li {
+    width: 8px;
+    height: 8px;
+  }
+  .index__mv .slick-dots li button {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: 1px solid var(--font-color);
+    background-color: transparent;
+  }
+  .index__mv .slick-dots li.slick-active button {
+    background-color: var(--font-color);
+  }
 }/*# sourceMappingURL=style.css.map */
