@@ -2,4 +2,8 @@
   .header__inner h1 img {
     height: 40px;
   }
+}
+.mv picture, .mv img {
+  width: 100%;
+  height: auto;
 }/*# sourceMappingURL=style.css.map */
