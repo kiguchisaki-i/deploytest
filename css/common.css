@@ -104,7 +104,6 @@ table {
   .header__inner nav {
     display: flex;
     align-items: center;
-    gap: 56px;
   }
   .header__inner nav ul {
     display: grid;
