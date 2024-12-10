@@ -11,9 +11,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 16px;
+        gap: 8px;
 
         li {
             margin: 0;
+            width: 8px;
+            height: 8px;
 
             button {
                 width: 100%;
@@ -28,20 +32,6 @@
                 button {
                     background-color: var(--border-color);
                 }
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 769px) {
-    .index__mv {
-        .slick-dots {
-            margin-top: 16px;
-            gap: 8px;
-
-            li {
-                width: 8px;
-                height: 8px;
             }
         }
     }

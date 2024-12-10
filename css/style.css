@@ -9,9 +9,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 16px;
+  gap: 8px;
 }
 .index__mv .slick-dots li {
   margin: 0;
+  width: 8px;
+  height: 8px;
 }
 .index__mv .slick-dots li button {
   width: 100%;
@@ -23,15 +27,4 @@
 }
 .index__mv .slick-dots li.slick-active button {
   background-color: var(--border-color);
-}
-
-@media screen and (min-width: 769px) {
-  .index__mv .slick-dots {
-    margin-top: 16px;
-    gap: 8px;
-  }
-  .index__mv .slick-dots li {
-    width: 8px;
-    height: 8px;
-  }
 }/*# sourceMappingURL=style.css.map */
