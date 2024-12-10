@@ -79,7 +79,7 @@ table {
     align-items: center;
   }
   .header__inner h1 img {
-    height: 40px;
+    height: 72px;
   }
   .header__inner nav {
     display: flex;
@@ -88,9 +88,11 @@ table {
   .header__inner nav ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 88px;
   }
   .header__inner nav a {
     font-size: 1.5rem;
+  }
+  .header__info-list {
+    gap: 40px;
   }
 }/*# sourceMappingURL=common.css.map */

@@ -78,21 +78,26 @@ table {
         }
         h1 {
             img {
-                height: 40px;
+                height: 72px;
             }
         }
         nav {
             display: flex;
             align-items: center;
-            
+
             ul {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
-                gap: 88px;
+                
             }
+            
             a {
                 font-size: 1.5rem;
             }
         }
+        
+    }
+    .header__info-list{
+        gap: 40px;
     }
 }
