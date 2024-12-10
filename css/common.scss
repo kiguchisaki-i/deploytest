@@ -101,7 +101,7 @@ table {
         h1 {
             
             border-right: 1px solid var(--border-color);
-            
+            height: 100%;
             display: flex;
             align-items: center;
 
@@ -176,7 +176,7 @@ table {
         }
 
         h1{
-            height: 100%;
+            
             img {
                 height: 72px;
             }
@@ -201,12 +201,12 @@ table {
         height: clamp(80px, 9.77vw, 122px);
 
         .row {
-            grid-template-columns: 114px auto;
+            grid-template-columns: calc(clamp(56px, 6.45vw, 78px) + 18px) auto;
         }
 
         h1{
             img{
-                width: 100%;
+                height: clamp(56px, 6.45vw, 78px);
             }
         }
 
@@ -222,7 +222,7 @@ table {
             }
         }
         .header__shopping-list{
-            padding-left: clamp(24px, 3.91vw, 48px);
+            padding-left: clamp(24px, 3.13vw, 48px);
             gap: clamp(16px, 3.13vw, 32px);
         }
     }
