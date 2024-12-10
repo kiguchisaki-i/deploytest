@@ -78,6 +78,16 @@ table {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 1201px) {
+  .row {
+    padding: 0 40px;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+  .row {
+    padding: 0 24px;
+  }
+}
 @media screen and (min-width: 769px) {
   .header__inner {
     display: flex;
@@ -92,7 +102,6 @@ table {
   }
   .header__inner h1 {
     border-right: 1px solid var(--border-color);
-    height: 100%;
     display: flex;
     align-items: center;
   }
@@ -151,6 +160,9 @@ table {
   }
   .header__inner .row {
     grid-template-columns: 268px auto;
+  }
+  .header__inner h1 {
+    height: 100%;
   }
   .header__inner h1 img {
     height: 72px;

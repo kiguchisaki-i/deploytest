@@ -73,6 +73,17 @@ table {
     padding: 0 40px;
     margin: 0 auto;
 }
+@media screen and (min-width: 1201px){
+    .row{
+        padding: 0 40px;
+    }
+}
+@media screen and (max-width: 1200px) and (min-width: 768px){
+    .row{
+        padding: 0 24px;
+    }
+}
+
 
 @media screen and (min-width: 769px) {
     .header__inner {
@@ -90,7 +101,7 @@ table {
         h1 {
             
             border-right: 1px solid var(--border-color);
-            height: 100%;
+            
             display: flex;
             align-items: center;
 
@@ -165,6 +176,7 @@ table {
         }
 
         h1{
+            height: 100%;
             img {
                 height: 72px;
             }
