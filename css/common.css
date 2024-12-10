@@ -287,14 +287,22 @@ header {
     width: 62%;
     margin-left: auto;
   }
+  .header__btn.is-active {
+    position: relative;
+  }
+  .header__btn.is-active span {
+    position: absolute;
+  }
   .header__btn.is-active span:first-of-type {
-    transform: rotate(20deg);
+    transform: rotate(26deg);
+    top: 50%;
   }
   .header__btn.is-active span:nth-of-type(2) {
     opacity: 0;
   }
   .header__btn.is-active span:last-of-type {
     width: 100%;
-    transform: rotate(-20deg);
+    transform: rotate(-26deg);
+    bottom: 50%;
   }
 }/*# sourceMappingURL=common.css.map */
