@@ -19,7 +19,7 @@ html {
   font-weight: normal;
   color: var(--font-color);
   font-kerning: auto;
-  font-family: "Noto Sans JP";
+  font-family: "Noto Sans JP", sans-serif;
 }
 *::before, *::after {
   display: block;
