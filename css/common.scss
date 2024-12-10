@@ -82,8 +82,8 @@ table {
         border-bottom: 1px solid var(--border-color);
 
         .row {
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: 256px auto;
             align-items: center;
             height: 100%;
         }
@@ -102,9 +102,9 @@ table {
             display: flex;
             align-items: center;
             height: 100%;
+            width: 100%;
 
             ul {
-                
                 align-items: center;
                 padding: 0 48px;
                 height: 100%;
@@ -113,7 +113,7 @@ table {
             a {
                 font-size: 1.5rem;
                 letter-spacing: 0.08em;
-                height: 64px;
+                height: 40px;
                 min-width: 44px;
                 display: flex;
                 justify-content: center;
@@ -129,14 +129,19 @@ table {
     }
     .header__info-list{
         display: flex;
-        gap: 40px;
 
         li{
             border-right: 1px solid var(--border-color);
+            
+            &:first-of-type{
+                a{
+                    padding-left: 0;
+                }
+            }
 
             &:last-of-type{
                 border-right: 0;
-                
+
                 a{
                     padding-right: 0;
                 }
@@ -144,7 +149,7 @@ table {
         }
 
         a{
-            padding: 0 16px;
+            padding: 0 48px;
         }
     }
     .header__shopping-list{

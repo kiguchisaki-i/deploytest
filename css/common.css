@@ -86,8 +86,8 @@ table {
     border-bottom: 1px solid var(--border-color);
   }
   .header__inner .row {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 256px auto;
     align-items: center;
     height: 100%;
   }
@@ -105,6 +105,7 @@ table {
     display: flex;
     align-items: center;
     height: 100%;
+    width: 100%;
   }
   .header__inner nav ul {
     align-items: center;
@@ -114,7 +115,7 @@ table {
   .header__inner nav a {
     font-size: 1.5rem;
     letter-spacing: 0.08em;
-    height: 64px;
+    height: 40px;
     min-width: 44px;
     display: flex;
     justify-content: center;
@@ -126,10 +127,12 @@ table {
   }
   .header__info-list {
     display: flex;
-    gap: 40px;
   }
   .header__info-list li {
     border-right: 1px solid var(--border-color);
+  }
+  .header__info-list li:first-of-type a {
+    padding-left: 0;
   }
   .header__info-list li:last-of-type {
     border-right: 0;
@@ -138,7 +141,7 @@ table {
     padding-right: 0;
   }
   .header__info-list a {
-    padding: 0 16px;
+    padding: 0 48px;
   }
   .header__shopping-list {
     display: grid;
