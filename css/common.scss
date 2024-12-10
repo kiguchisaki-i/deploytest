@@ -124,6 +124,7 @@ header {
 
 .header__shopping-list {
     display: grid;
+    align-items: center;
     grid-template-columns: repeat(3, 1fr);
 }
 
@@ -294,7 +295,9 @@ header {
         gap: clamp(8px, 2.22vw, 16px);
         border-right: 1px solid var(--border-color);
         border-left: 1px solid var(--border-color);
-        margin-right: 24px;
+        margin-right: 18px;
+        height: 100%;
+        padding: 0 clamp(12px, 4.44vw, 32px);
 
         a {
             img {
