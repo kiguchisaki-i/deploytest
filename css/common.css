@@ -79,7 +79,6 @@ table {
 
 @media screen and (min-width: 769px) {
   .header__inner {
-    height: 144px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,7 +86,6 @@ table {
   }
   .header__inner .row {
     display: grid;
-    grid-template-columns: 268px auto;
     align-items: center;
     height: 100%;
   }
@@ -154,5 +152,21 @@ table {
     grid-template-columns: repeat(3, 1fr);
     padding-left: 48px;
     border-left: 1px solid var(--border-color);
+  }
+}
+@media screen and (min-width: 1201px) {
+  .header__inner {
+    height: 144px;
+  }
+  .header__inner .row {
+    grid-template-columns: 268px auto;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+  .header__inner {
+    height: 122px;
+  }
+  .header__inner .row {
+    grid-template-columns: 130px auto;
   }
 }/*# sourceMappingURL=common.css.map */

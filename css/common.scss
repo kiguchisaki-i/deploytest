@@ -8,7 +8,7 @@ html {
     font-size: 62.5%;
     touch-action: manipulation;
 }
-body{
+body {
     background-color: #f4f4f4;
 }
 * {
@@ -75,7 +75,6 @@ table {
 
 @media screen and (min-width: 769px) {
     .header__inner {
-        height: 144px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -83,7 +82,7 @@ table {
 
         .row {
             display: grid;
-            grid-template-columns: 268px auto;
+
             align-items: center;
             height: 100%;
         }
@@ -109,7 +108,7 @@ table {
                 align-items: center;
                 height: 100%;
             }
-            
+
             a {
                 font-size: 1.5rem;
                 letter-spacing: 0.08em;
@@ -118,49 +117,68 @@ table {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                
-                img{
+
+                img {
                     width: 24px;
                     height: 24px;
                 }
             }
         }
-        
     }
-    .header__info-list{
+    .header__info-list {
         display: flex;
         justify-content: space-between;
         gap: 8px;
         width: 100%;
         padding-left: 16px;
 
-        li{
+        li {
             width: 100%;
             border-right: 1px solid var(--border-color);
             display: flex;
             justify-content: center;
             align-items: center;
-            
-            &:first-of-type{
-                a{
+
+            &:first-of-type {
+                a {
                     padding-left: 0;
                 }
             }
 
-            &:last-of-type{
+            &:last-of-type {
                 border-right: 0;
 
-                a{
+                a {
                     padding-right: 0;
                 }
             }
         }
     }
-    .header__shopping-list{
+    .header__shopping-list {
         display: grid;
         gap: 16px;
         grid-template-columns: repeat(3, 1fr);
         padding-left: 48px;
         border-left: 1px solid var(--border-color);
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .header__inner {
+        height: 144px;
+
+        .row {
+            grid-template-columns: 268px auto;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+    .header__inner {
+        height: 122px;
+
+        .row {
+            grid-template-columns: 130px auto;
+        }
     }
 }
