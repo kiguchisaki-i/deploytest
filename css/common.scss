@@ -85,7 +85,6 @@ table {
     }
 }
 
-
 .row {
     width: min(100%, 1380px);
     margin: 0 auto;
@@ -279,7 +278,7 @@ header {
             justify-content: space-between;
         }
         h1 {
-            img{
+            img {
                 height: clamp(44px, 12vw, 75px);
             }
         }
@@ -308,7 +307,7 @@ header {
     }
     .header__btn {
         width: clamp(24px, 6.67vw, 32px);
-        height: clamp(18px, 5.33vw, 26px);
+        height: clamp(18px, 5.33vw, 24px);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -318,7 +317,11 @@ header {
             height: 1px;
             width: 100%;
             background-color: var(--font-color);
+
+            &:last-of-type {
+                width: 62%;
+                margin-left: auto;
+            }
         }
     }
 }
-
