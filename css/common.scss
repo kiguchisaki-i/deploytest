@@ -111,18 +111,11 @@ table {
             }
 
             a {
-                
                 letter-spacing: 0.08em;
                 height: 40px;
-                min-width: 44px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-
-                img {
-                    width: 24px;
-                    height: 24px;
-                }
             }
         }
     }
@@ -175,6 +168,12 @@ table {
         nav{
             a{
                 font-size: 1.5rem;
+                min-width: 44px;
+
+                img {
+                    width: 24px;
+                    height: 24px;
+                }
             }
         }
     }
@@ -191,6 +190,11 @@ table {
         nav{
             a{
                 font-size: clamp(1.3rem, 1.27vw, 1.5rem);
+                
+                img{
+                    width: clamp(18px, 1.76vw, 22px);
+                    height: clamp(18px, 1.76vw, 22px);
+                }
             }
         }
     }
