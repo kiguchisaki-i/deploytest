@@ -211,10 +211,10 @@ header {
     width: clamp(18px, 1.76vw, 22px);
     height: clamp(18px, 1.76vw, 22px);
   }
-  .header__inner .header__info-list li:first-of-type {
+  .header__info-list li:first-of-type {
     padding-right: 10px;
   }
-  .header__inner .header__shopping-list {
+  .header__shopping-list {
     padding-left: clamp(24px, 3.13vw, 48px);
     gap: clamp(16px, 3.13vw, 32px);
   }
@@ -234,16 +234,21 @@ header {
   .header__inner nav {
     display: contents;
   }
-  .header__inner .header__info-list {
+  .header__info-list {
     position: absolute;
   }
-  .header__inner .header__shopping-list {
+  .header__shopping-list {
     margin-left: auto;
     gap: clamp(8px, 2.22vw, 16px);
   }
-  .header__inner .header__shopping-list a img {
+  .header__shopping-list a img {
     width: clamp(18px, 4.44vw, 24px);
     height: clamp(18px, 4.44vw, 24px);
+  }
+  .header__btn span {
+    height: 1px;
+    width: 100%;
+    background-color: var(--font-color);
   }
 }
 @media screen and (min-width: 769px) {
