@@ -87,12 +87,24 @@ table {
   }
   .header__inner nav ul {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
   }
   .header__inner nav a {
     font-size: 1.5rem;
+    height: 44px;
+    min-width: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__inner nav a img {
+    width: 24px;
+    height: 24px;
   }
   .header__info-list {
     gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .header__shopping-list {
+    gap: 16px;
   }
 }/*# sourceMappingURL=common.css.map */
