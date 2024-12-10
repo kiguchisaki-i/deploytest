@@ -15,15 +15,15 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const headerBtn = document.getElementById('header__btn');
-const header = document.getElementById('header');
+const headerNav = document.getElementById('header__nav');
 
 headerBtn.addEventListener('click', function() {
     if (headerBtn.classList.contains('is-active')) {
         headerBtn.classList.remove('is-active');
-        header.classList.remove('is-active');
+        headerNav.classList.remove('is-active');
     } else {
         headerBtn.classList.add('is-active');
-        header.classList.add('is-active');
+        headerNav.classList.add('is-active');
     }
 });
 
@@ -31,6 +31,6 @@ const headerMenuItems = document.querySelectorAll('header nav ul li a');
 headerMenuItems.forEach(function(headerMenuItem) {
     headerMenuItem.addEventListener('click', function() {
         headerBtn.classList.remove('is-active');
-        header.classList.remove('is-active');
+        headerNav.classList.remove('is-active');
     });
 });
