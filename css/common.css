@@ -92,7 +92,7 @@ table {
     border-right: 1px solid var(--border-color);
     height: 100%;
     display: flex;
-    justify-content: center;
+    align-items: center;
   }
   .header__inner h1 img {
     height: 72px;
