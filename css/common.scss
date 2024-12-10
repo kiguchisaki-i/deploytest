@@ -99,7 +99,6 @@ header {
 
 .header__inner {
     .row {
-        display: grid;
         align-items: center;
         height: 100%;
     }
@@ -116,6 +115,10 @@ header {
         align-items: center;
         justify-content: center;
         border-bottom: 1px solid var(--border-color);
+        
+        .row{
+            display: grid;
+        }
 
         h1 {
             border-right: 1px solid var(--border-color);
@@ -252,7 +255,11 @@ header {
         position: relative;
 
         .row {
-            grid-template-columns: clamp(130px, 35.56vw, 220px) auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        h1{
+            width: clamp(130px, 35.56vw, 220px);
         }
         nav {
             display: contents;
@@ -260,8 +267,12 @@ header {
         .header__info-list {
             position: absolute;
         }
+        .header__shopping-list{
+            margin-left: auto;
+        }
     }
 }
+
 
 @media screen and (min-width: 769px) {
     .show_pc {
