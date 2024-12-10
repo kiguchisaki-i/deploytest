@@ -99,15 +99,17 @@ table {
     align-items: center;
   }
   .header__inner h1 img {
-    height: 72px;
+    height: 64px;
   }
   .header__inner nav {
     display: flex;
     align-items: center;
+    height: 100%;
   }
   .header__inner nav ul {
-    display: grid;
+    align-items: center;
     padding: 0 48px;
+    height: 100%;
   }
   .header__inner nav a {
     font-size: 1.5rem;
@@ -123,10 +125,23 @@ table {
     height: 24px;
   }
   .header__info-list {
+    display: flex;
     gap: 40px;
-    grid-template-columns: repeat(4, 1fr);
+  }
+  .header__info-list li {
+    border-right: 1px solid var(--border-color);
+  }
+  .header__info-list li:last-of-type {
+    border-right: 0;
+  }
+  .header__info-list li:last-of-type a {
+    padding-right: 0;
+  }
+  .header__info-list a {
+    padding: 0 16px;
   }
   .header__shopping-list {
+    display: grid;
     gap: 16px;
     grid-template-columns: repeat(3, 1fr);
     padding-right: 0;

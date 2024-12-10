@@ -95,16 +95,19 @@ table {
             align-items: center;
 
             img {
-                height: 72px;
+                height: 64px;
             }
         }
         nav {
             display: flex;
             align-items: center;
+            height: 100%;
 
             ul {
-                display: grid;
+                
+                align-items: center;
                 padding: 0 48px;
+                height: 100%;
             }
             
             a {
@@ -125,10 +128,27 @@ table {
         
     }
     .header__info-list{
+        display: flex;
         gap: 40px;
-        grid-template-columns: repeat(4, 1fr);
+
+        li{
+            border-right: 1px solid var(--border-color);
+
+            &:last-of-type{
+                border-right: 0;
+                
+                a{
+                    padding-right: 0;
+                }
+            }
+        }
+
+        a{
+            padding: 0 16px;
+        }
     }
     .header__shopping-list{
+        display: grid;
         gap: 16px;
         grid-template-columns: repeat(3, 1fr);
         padding-right: 0;
