@@ -108,11 +108,12 @@ table {
   }
   .header__inner nav ul {
     display: grid;
+    padding: 0 48px;
   }
   .header__inner nav a {
     font-size: 1.5rem;
     letter-spacing: 0.08em;
-    height: 44px;
+    height: 64px;
     min-width: 44px;
     display: flex;
     justify-content: center;
@@ -129,5 +130,7 @@ table {
   .header__shopping-list {
     gap: 16px;
     grid-template-columns: repeat(3, 1fr);
+    padding-right: 0;
+    border-left: 1px solid var(--border-color);
   }
 }/*# sourceMappingURL=common.css.map */
