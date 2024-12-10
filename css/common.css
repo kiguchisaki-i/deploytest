@@ -19,7 +19,7 @@ html {
   font-weight: normal;
   color: var(--font-color);
   font-kerning: auto;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans JP", "Inter", sans-serif;
 }
 *::before, *::after {
   display: block;
@@ -63,4 +63,10 @@ table {
 
 :target {
   scroll-margin-top: 100px;
+}
+
+.row {
+  width: min(100%, 1380px);
+  padding: 0 40px;
+  margin: 0 auto;
 }/*# sourceMappingURL=common.css.map */

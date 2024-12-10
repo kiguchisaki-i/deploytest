@@ -1,5 +1,10 @@
-.row{
-    width: min(100%, 1380px);
-    padding: 0 40px;
-    margin: 0 auto;
+@media screen and (min-width: 769px){
+    .header__inner{
+        h1{
+            img{
+                height: 40px;
+            }
+        }
+    }
 }
+
