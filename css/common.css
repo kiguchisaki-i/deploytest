@@ -76,14 +76,19 @@ table {
   .header__inner .row {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   .header__inner h1 img {
     height: 40px;
   }
+  .header__inner nav {
+    display: flex;
+    align-items: center;
+  }
   .header__inner nav ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
+    gap: 88px;
   }
   .header__inner nav a {
     font-size: 1.5rem;

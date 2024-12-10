@@ -74,7 +74,7 @@ table {
         .row {
             display: flex;
             justify-content: space-between;
-            
+            align-items: center;
         }
         h1 {
             img {
@@ -82,10 +82,13 @@ table {
             }
         }
         nav {
+            display: flex;
+            align-items: center;
+            
             ul {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
-                gap: 40px;
+                gap: 88px;
             }
             a {
                 font-size: 1.5rem;
