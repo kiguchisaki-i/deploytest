@@ -72,6 +72,22 @@ table {
   scroll-margin-top: 100px;
 }
 
+@media screen and (min-width: 769px) {
+  .show_pc {
+    display: block;
+  }
+  .show_sp {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .show_pc {
+    display: none;
+  }
+  .show_sp {
+    display: block;
+  }
+}
 .row {
   width: min(100%, 1380px);
   margin: 0 auto;
@@ -257,21 +273,5 @@ header {
     height: 1px;
     width: 100%;
     background-color: var(--font-color);
-  }
-}
-@media screen and (min-width: 769px) {
-  .show_pc {
-    display: block;
-  }
-  .show_sp {
-    display: none;
-  }
-}
-@media screen and (max-width: 768px) {
-  .show_pc {
-    display: none;
-  }
-  .show_sp {
-    display: block;
   }
 }/*# sourceMappingURL=common.css.map */
