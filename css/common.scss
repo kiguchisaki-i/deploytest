@@ -279,6 +279,10 @@ header {
             justify-content: space-between;
         }
         h1 {
+            background-color: #f4f4f4;
+            position: relative;
+            z-index: 2;
+
             img {
                 height: clamp(44px, 12vw, 75px);
             }
@@ -290,7 +294,10 @@ header {
     .header__info-list {
         position: absolute;
         top: calc((clamp(44px, 12vw, 75px) + clamp(12px, 2.67vw, 14px)) * -1);
+        left: 0;
+        right: 0;
         background-color: #f4f4f4;
+        transition: .6s ease-in;
 
         &.is-active{
             top: calc((clamp(44px, 12vw, 75px) + clamp(12px, 2.67vw, 14px)));
