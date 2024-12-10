@@ -238,6 +238,11 @@ header {
   }
   .header__inner .header__shopping-list {
     margin-left: auto;
+    gap: clamp(8px, 2.22vw, 16px);
+  }
+  .header__inner .header__shopping-list a img {
+    width: clamp(18px, 4.44vw, 24px);
+    height: clamp(18px, 4.44vw, 24px);
   }
 }
 @media screen and (min-width: 769px) {

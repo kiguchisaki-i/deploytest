@@ -269,6 +269,14 @@ header {
         }
         .header__shopping-list{
             margin-left: auto;
+            gap: clamp(8px, 2.22vw, 16px);
+
+            a{
+                img{
+                    width: clamp(18px, 4.44vw, 24px);
+                    height: clamp(18px, 4.44vw, 24px);
+                }
+            }
         }
     }
 }
