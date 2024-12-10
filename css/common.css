@@ -84,6 +84,7 @@ table {
   .header__inner nav {
     display: flex;
     align-items: center;
+    gap: 56px;
   }
   .header__inner nav ul {
     display: grid;
@@ -106,5 +107,6 @@ table {
   }
   .header__shopping-list {
     gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
   }
 }/*# sourceMappingURL=common.css.map */
