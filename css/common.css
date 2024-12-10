@@ -255,6 +255,12 @@ header {
   }
   .header__info-list {
     position: absolute;
+    top: calc((clamp(44px, 12vw, 75px) + clamp(12px, 2.67vw, 14px)) * -1);
+    background-color: #f4f4f4;
+  }
+  .header__info-list.is-active {
+    top: calc(clamp(44px, 12vw, 75px) + clamp(12px, 2.67vw, 14px));
+    height: calc(100svh - (clamp(44px, 12vw, 75px) + clamp(12px, 2.67vw, 14px)));
   }
   .header__shopping-list {
     margin-left: auto;
