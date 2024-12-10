@@ -271,14 +271,14 @@ header {
 @media screen and (max-width: 768px) {
     .header__inner {
         position: relative;
+        height: calc(clamp(44px, 12vw, 75px) + clamp(12px, 2.67vw, 14px) 0px);
 
         .row {
             display: flex;
             justify-content: space-between;
         }
         h1 {
-            width: clamp(130px, 35.56vw, 220px);
-            padding: clamp(12px, 2.67vw, 14px) 0px;
+            height: clamp(44px, 12vw, 75px);
         }
         nav {
             display: contents;

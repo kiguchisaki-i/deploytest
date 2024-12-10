@@ -244,7 +244,7 @@ header {
     justify-content: space-between;
   }
   .header__inner h1 {
-    width: clamp(130px, 35.56vw, 220px);
+    height: clamp(44px, 12vw, 75px);
     padding: clamp(12px, 2.67vw, 14px) 0px;
   }
   .header__inner nav {
