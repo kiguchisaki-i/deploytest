@@ -677,4 +677,22 @@ header {
             font-size: clamp(1.2rem, 2.67vw, 1.3rem);
         }
     }
+    .footer__note{
+        padding: 24px 0;
+
+        ul{
+            display: grid;
+            align-items: center;
+        }
+        a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: clamp(24px, 6.67vw, 32px);
+            font-size: 1.2rem;
+        }
+        span{
+            font-size: 1.1rem;
+        }
+    }
 }

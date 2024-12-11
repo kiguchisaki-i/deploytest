@@ -552,4 +552,21 @@ header {
   .footer__nav a {
     font-size: clamp(1.2rem, 2.67vw, 1.3rem);
   }
+  .footer__note {
+    padding: 24px 0;
+  }
+  .footer__note ul {
+    display: grid;
+    align-items: center;
+  }
+  .footer__note a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: clamp(24px, 6.67vw, 32px);
+    font-size: 1.2rem;
+  }
+  .footer__note span {
+    font-size: 1.1rem;
+  }
 }/*# sourceMappingURL=common.css.map */
