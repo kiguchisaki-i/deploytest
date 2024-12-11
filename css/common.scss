@@ -4,7 +4,7 @@
     --primary: #afe9f3;
 
     --fs38-pc: clamp(3.4rem, 4vw, 3.8rem);
-    --fs32-sp: clamp(2.6rem, 6.67vw, 3.2rem)
+    --fs32-sp: clamp(2.6rem, 6.67vw, 3.2rem);
 }
 html {
     scroll-behavior: smooth;
@@ -408,7 +408,11 @@ header {
 .footer__nav {
     nav {
         > ul {
+            display: grid;
+            grid-auto-flow: column;
+
             ul {
+                display: contents;
                 li {
                     display: grid;
                     align-items: center;
@@ -424,24 +428,29 @@ header {
                     }
                 }
             }
+
+            li:has(ul) {
+                display: contents;
+            }
         }
     }
 }
 
-.footer__note{
+.footer__note {
     border-top: 1px solid var(--border-color);
 
-    li{
-        &:first-of-type{
+    li {
+        &:first-of-type {
             border-right: 1px solid var(--border-color);
         }
     }
 
-    a, span{
+    a,
+    span {
         letter-spacing: 0.08em;
     }
 
-    span{
+    span {
         text-transform: uppercase;
     }
 }
@@ -457,7 +466,6 @@ header {
         border-right: 1px solid var(--border-color);
 
         h2 {
-            
             margin-bottom: 24px;
         }
 
@@ -473,19 +481,18 @@ header {
 
         nav {
             > ul {
-                
                 grid-template-rows: repeat(4, 1fr);
                 gap: 32px 16px;
 
-                ul{
-                    li{
-                        &:nth-of-type(4){
+                ul {
+                    li {
+                        &:nth-of-type(4) {
                             grid-row: 2 /3;
                         }
-                        &:nth-of-type(5){
+                        &:nth-of-type(5) {
                             grid-row: 3/4;
                         }
-                        &:nth-of-type(6){
+                        &:nth-of-type(6) {
                             grid-row: 4/5;
                         }
                     }
@@ -493,14 +500,15 @@ header {
             }
         }
     }
-    .footer__contact, .footer__nav{
+    .footer__contact,
+    .footer__nav {
         padding-top: 96px;
     }
 }
 
 @media screen and (min-width: 769px) {
     .footer__contact {
-        h2{
+        h2 {
             font-size: var(--fs38-pc);
         }
         p {
@@ -508,77 +516,60 @@ header {
         }
     }
     .footer__nav {
-        nav {
-            > ul {
-                display: grid;
-                grid-auto-flow: column;
-
-                li:has(ul){
-                    display: contents;
-                }
-
-                ul {
-                    display: contents;
-
-                    
-                }
-            }
-        }
-
         a {
             font-size: 1.5rem;
         }
     }
-    .footer__note{
+    .footer__note {
         padding: 32px 0;
 
-        .row{
+        .row {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
-        ul{
+        ul {
             display: flex;
             align-items: center;
         }
-        li{
-            padding: 0 clamp(24px,2.67vw, 48px);
+        li {
+            padding: 0 clamp(24px, 2.67vw, 48px);
 
-            &:first-of-type{
+            &:first-of-type {
                 padding-left: 0;
             }
         }
-        a{
+        a {
             display: flex;
             justify-content: center;
             align-items: center;
             height: clamp(40px, 5vw, 48px);
             font-size: clamp(1.3rem, 1.63vw, 1.4rem);
         }
-        span{
+        span {
             font-size: clamp(1.2rem, 1.5vw, 1.3rem);
             text-align: right;
         }
     }
 }
 
-@media screen and (max-width: 1200px) and (min-width: 769px){
-    .footer__contact{
+@media screen and (max-width: 1200px) and (min-width: 769px) {
+    .footer__contact {
         padding-top: 54px;
 
-        h2{
+        h2 {
             margin-bottom: 24px;
         }
 
-        p{
-            & + p{
+        p {
+            & + p {
                 margin-top: 12px;
             }
         }
 
-        &::after{
-            content: '';
+        &::after {
+            content: "";
             display: block;
             width: calc(100% + 48px);
             height: 1px;
@@ -589,34 +580,33 @@ header {
         }
     }
 
-    .footer__nav{
+    .footer__nav {
         padding-top: 48px;
         padding-bottom: 56px;
         width: min(100%, 480px);
 
-        nav{
-            > ul{
+        nav {
+            > ul {
                 gap: 32px 0;
 
-                ul{
-                    li{
+                ul {
+                    li {
                         padding-left: 24px;
                     }
                 }
             }
         }
-        
     }
 }
 
-@media screen and (max-width: 1200px){
-    .footer__nav{
-        nav{
-            > ul{
+@media screen and (max-width: 1200px) {
+    .footer__nav {
+        nav {
+            > ul {
                 grid-template-rows: repeat(7, 1fr);
 
-                > li{
-                    &:nth-of-type(4){
+                > li {
+                    &:nth-of-type(4) {
                         grid-row: 4/8;
                     }
                 }
@@ -625,24 +615,25 @@ header {
     }
 }
 
-@media screen and (max-width: 768px){
-    .footer__contact{
+@media screen and (max-width: 768px) {
+    .footer__contact {
         padding-top: clamp(32px, 7.11vw, 40px);
 
-        h2{
+        h2 {
             font-size: var(--fs32-sp);
             margin-bottom: 16px;
         }
-        p, a{
+        p,
+        a {
             font-size: 1.3rem;
         }
-        p{
-            & + p{
+        p {
+            & + p {
                 margin-top: 10px;
             }
         }
-        &::after{
-            content: '';
+        &::after {
+            content: "";
             display: block;
             width: calc(100% + 36px);
             height: 1px;
@@ -652,8 +643,8 @@ header {
             margin-top: clamp(32px, 7.11vw, 40px);
         }
     }
-    .footer__nav{
-        a{
+    .footer__nav {
+        a {
             font-size: clamp(1.2rem, 2.67vw, 1.3rem);
         }
     }

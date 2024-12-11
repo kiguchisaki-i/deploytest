@@ -3,7 +3,7 @@
   --border-color: #5c7d92;
   --primary: #afe9f3;
   --fs38-pc: clamp(3.4rem, 4vw, 3.8rem);
-  --fs32-sp: clamp(2.6rem, 6.67vw, 3.2rem) ;
+  --fs32-sp: clamp(2.6rem, 6.67vw, 3.2rem);
 }
 
 html {
@@ -353,6 +353,13 @@ header {
   letter-spacing: 0.08em;
 }
 
+.footer__nav nav > ul {
+  display: grid;
+  grid-auto-flow: column;
+}
+.footer__nav nav > ul ul {
+  display: contents;
+}
 .footer__nav nav > ul ul li {
   display: grid;
   align-items: center;
@@ -366,6 +373,9 @@ header {
   height: 1px;
   background-color: var(--font-color);
 }
+.footer__nav nav > ul li:has(ul) {
+  display: contents;
+}
 
 .footer__note {
   border-top: 1px solid var(--border-color);
@@ -373,7 +383,8 @@ header {
 .footer__note li:first-of-type {
   border-right: 1px solid var(--border-color);
 }
-.footer__note a, .footer__note span {
+.footer__note a,
+.footer__note span {
   letter-spacing: 0.08em;
 }
 .footer__note span {
@@ -411,7 +422,8 @@ header {
   .footer__nav nav > ul ul li:nth-of-type(6) {
     grid-row: 4/5;
   }
-  .footer__contact, .footer__nav {
+  .footer__contact,
+  .footer__nav {
     padding-top: 96px;
   }
 }
@@ -421,16 +433,6 @@ header {
   }
   .footer__contact p {
     font-size: 1.4rem;
-  }
-  .footer__nav nav > ul {
-    display: grid;
-    grid-auto-flow: column;
-  }
-  .footer__nav nav > ul li:has(ul) {
-    display: contents;
-  }
-  .footer__nav nav > ul ul {
-    display: contents;
   }
   .footer__nav a {
     font-size: 1.5rem;
@@ -513,7 +515,8 @@ header {
     font-size: var(--fs32-sp);
     margin-bottom: 16px;
   }
-  .footer__contact p, .footer__contact a {
+  .footer__contact p,
+  .footer__contact a {
     font-size: 1.3rem;
   }
   .footer__contact p + p {
