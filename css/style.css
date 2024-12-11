@@ -6,6 +6,9 @@
 .index__mv .slick-dotted.slick-slider {
   margin-bottom: 0;
 }
+.index__mv .slick-slider {
+  display: flex;
+}
 .index__mv .slick-dots {
   position: relative;
   bottom: unset;
@@ -30,4 +33,38 @@
 }
 .index__mv .slick-dots li.slick-active button {
   background-color: var(--font-color);
+}
+
+.index__news .row {
+  display: flex;
+  align-items: center;
+}
+.index__news h2 {
+  letter-spacing: 0.04em;
+}
+
+.index__news-one p {
+  letter-spacing: 0.04em;
+}
+
+@media screen and (min-width: 769px) {
+  .index__news {
+    padding: 32px 0;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+  }
+  .index__news .row {
+    gap: 40px;
+  }
+  .index__news h2 {
+    font-size: 1.8rem;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+    border-right: 1px solid var(--border-color);
+  }
+  .index__news-one p {
+    font-size: 1.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
