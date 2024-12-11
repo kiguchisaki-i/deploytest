@@ -448,7 +448,7 @@ header {
         nav {
             > ul {
                 grid-auto-flow: column;
-                grid-template-rows: repeat(2, 1fr);
+                grid-template-rows: repeat(4, 1fr);
             }
         }
     }
@@ -459,6 +459,10 @@ header {
         nav {
             > ul {
                 display: grid;
+
+                li:has(ul){
+                    display: contents;
+                }
 
                 ul {
                     display: contents;
