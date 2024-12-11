@@ -664,7 +664,7 @@ header {
                 ul {
                     li {
                         grid-template-columns: clamp(14px, 3.56vw, 20px) auto;
-                        
+                        gap: clamp(10px, 2.22vw, 14px);
                         &::before{
                             width: clamp(14px, 3.56vw, 20px);
                         }

@@ -544,6 +544,7 @@ header {
   }
   .footer__nav nav > ul ul li {
     grid-template-columns: clamp(14px, 3.56vw, 20px) auto;
+    gap: clamp(10px, 2.22vw, 14px);
   }
   .footer__nav nav > ul ul li::before {
     width: clamp(14px, 3.56vw, 20px);
