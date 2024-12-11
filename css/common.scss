@@ -618,8 +618,19 @@ header {
 
 @media screen and (max-width: 768px){
     .footer__contact{
+        padding-top: clamp(32px, 7.11vw, 40px);
+
         h2{
             font-size: var(--fs32-sp);
+            margin-bottom: 16px;
+        }
+        p, a{
+            font-size: 1.3rem;
+        }
+        p{
+            & + p{
+                margin-top: 10px;
+            }
         }
         &::after{
             content: '';
@@ -629,6 +640,7 @@ header {
             background-color: var(--border-color);
             position: relative;
             left: -18px;
+            margin-top: clamp(32px, 7.11vw, 40px);
         }
     }
 }

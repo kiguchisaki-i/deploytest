@@ -502,8 +502,18 @@ header {
   }
 }
 @media screen and (max-width: 768px) {
+  .footer__contact {
+    padding-top: clamp(32px, 7.11vw, 40px);
+  }
   .footer__contact h2 {
     font-size: var(--fs32-sp);
+    margin-bottom: 16px;
+  }
+  .footer__contact p, .footer__contact a {
+    font-size: 1.3rem;
+  }
+  .footer__contact p + p {
+    margin-top: 10px;
   }
   .footer__contact::after {
     content: "";
@@ -513,5 +523,6 @@ header {
     background-color: var(--border-color);
     position: relative;
     left: -18px;
+    margin-top: clamp(32px, 7.11vw, 40px);
   }
 }/*# sourceMappingURL=common.css.map */
