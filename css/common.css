@@ -431,7 +431,7 @@ header {
   .footer__nav a {
     font-size: 1.5rem;
   }
-  .footer__note {
+  .footer__note .row {
     display: flex;
     justify-content: space-between;
     align-items: center;

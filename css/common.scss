@@ -526,9 +526,11 @@ header {
         }
     }
     .footer__note{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        .row{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
         ul{
             display: flex;
