@@ -363,13 +363,10 @@ header {
 .footer__nav nav > ul ul li {
   display: grid;
   align-items: center;
-  grid-template-columns: 24px auto;
-  gap: 16px;
 }
 .footer__nav nav > ul ul li::before {
   content: "";
   display: block;
-  width: 24px;
   height: 1px;
   background-color: var(--font-color);
 }
@@ -433,6 +430,13 @@ header {
   }
   .footer__contact p {
     font-size: 1.4rem;
+  }
+  .footer__nav nav > ul ul li {
+    grid-template-columns: 24px auto;
+    gap: 16px;
+  }
+  .footer__nav nav > ul ul li::before {
+    width: 24px;
   }
   .footer__nav a {
     font-size: 1.5rem;
@@ -531,6 +535,18 @@ header {
     position: relative;
     left: -18px;
     margin-top: clamp(32px, 7.11vw, 40px);
+  }
+  .footer__nav {
+    padding: clamp(32px, 7.11vw, 40px) 0;
+  }
+  .footer__nav nav > ul {
+    gap: clamp(18px, 4.44vw, 24px) 0;
+  }
+  .footer__nav nav > ul ul li {
+    grid-template-columns: clamp(14px, 3.56vw, 20px) auto;
+  }
+  .footer__nav nav > ul ul li::before {
+    width: clamp(14px, 3.56vw, 20px);
   }
   .footer__nav a {
     font-size: clamp(1.2rem, 2.67vw, 1.3rem);

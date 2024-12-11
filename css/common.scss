@@ -416,13 +416,10 @@ header {
                 li {
                     display: grid;
                     align-items: center;
-                    grid-template-columns: 24px auto;
-                    gap: 16px;
 
                     &::before {
                         content: "";
                         display: block;
-                        width: 24px;
                         height: 1px;
                         background-color: var(--font-color);
                     }
@@ -516,6 +513,20 @@ header {
         }
     }
     .footer__nav {
+        nav {
+            > ul {
+                ul {
+                    li {
+                        grid-template-columns: 24px auto;
+                        gap: 16px;
+
+                        &::before {
+                            width: 24px;
+                        }
+                    }
+                }
+            }
+        }
         a {
             font-size: 1.5rem;
         }
@@ -644,6 +655,24 @@ header {
         }
     }
     .footer__nav {
+        padding: clamp(32px, 7.11vw, 40px) 0;
+
+        nav {
+            > ul {
+                gap: clamp(18px, 4.44vw, 24px) 0;
+
+                ul {
+                    li {
+                        grid-template-columns: clamp(14px, 3.56vw, 20px) auto;
+                        
+                        &::before{
+                            width: clamp(14px, 3.56vw, 20px);
+                        }
+                    }
+                }
+            }
+        }
+
         a {
             font-size: clamp(1.2rem, 2.67vw, 1.3rem);
         }
