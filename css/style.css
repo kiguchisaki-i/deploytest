@@ -118,13 +118,12 @@
   }
   .index__map li {
     padding-top: 40px;
+    padding-bottom: 64px;
   }
   .index__map li:first-of-type {
-    padding-right: 40px;
     order: 1;
   }
   .index__map li:nth-of-type(2) {
-    padding-left: 40px;
     order: 3;
   }
   .index__map iframe {
@@ -133,11 +132,16 @@
   }
   .index__map h2 {
     font-size: 1.8rem;
+    margin-top: 32px;
+    margin-bottom: 12px;
   }
   .index__map p {
     font-size: 1.4rem;
   }
   .index__map p:first-of-type {
     letter-spacing: 0.08em;
+  }
+  .index__map p + p {
+    margin-top: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
