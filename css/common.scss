@@ -596,14 +596,7 @@ header {
 
         nav{
             > ul{
-                grid-template-rows: repeat(7, 1fr);
                 gap: 32px 0;
-
-                > li{
-                    &:nth-of-type(4){
-                        grid-row: 4/8;
-                    }
-                }
 
                 ul{
                     li{
@@ -613,6 +606,22 @@ header {
             }
         }
         
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .footer__nav{
+        nav{
+            > ul{
+                grid-template-rows: repeat(7, 1fr);
+
+                > li{
+                    &:nth-of-type(4){
+                        grid-row: 4/8;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -641,6 +650,11 @@ header {
             position: relative;
             left: -18px;
             margin-top: clamp(32px, 7.11vw, 40px);
+        }
+    }
+    .footer__nav{
+        a{
+            font-size: clamp(1.2rem, 1.3rem);
         }
     }
 }
