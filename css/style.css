@@ -8,6 +8,7 @@
 }
 .index__mv .slick-slider {
   display: flex;
+  flex-direction: column;
 }
 .index__mv .slick-dots {
   position: relative;
