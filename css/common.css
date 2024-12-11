@@ -345,11 +345,14 @@ header {
 }
 
 @media screen and (min-width: 1201px) {
-  .footer__inner {
+  .footer__inner .row {
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
   .footer__contact {
     border-right: 1px solid var(--border-color);
+  }
+  .footer__contact h2 {
+    font-size: var(--fs38-pc);
   }
 }/*# sourceMappingURL=common.css.map */

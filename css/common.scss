@@ -30,7 +30,7 @@ body {
         display: block;
     }
 
-    &.en{
+    &.en {
         font-family: "Libre Baskerville", serif;
         font-weight: 400;
     }
@@ -305,29 +305,29 @@ header {
         left: 0;
         right: 0;
         background-color: #f4f4f4;
-        transition: .6s ease-out;
+        transition: 0.6s ease-out;
         z-index: -1;
         opacity: 0;
         padding: 0 18px;
         display: flex;
         flex-direction: column;
 
-        li{
-            &:last-of-type{
-                a{
+        li {
+            &:last-of-type {
+                a {
                     border-bottom: 0;
                 }
             }
         }
 
-        a{
+        a {
             font-size: 1.3rem;
             padding: 12px 0;
             display: flex;
             border-bottom: 1px solid var(--border-color);
         }
 
-        &.is-active{
+        &.is-active {
             z-index: 1;
             opacity: 1;
         }
@@ -360,30 +360,30 @@ header {
             height: 1px;
             width: 100%;
             background-color: var(--font-color);
-            transition: .4s;
+            transition: 0.4s;
 
             &:last-of-type {
                 width: 62%;
                 margin-left: auto;
             }
         }
-        
-        &.is-active{
+
+        &.is-active {
             position: relative;
 
-            span{
+            span {
                 position: absolute;
 
-                &:first-of-type{
+                &:first-of-type {
                     transform: rotate(26deg);
                     top: 50%;
                 }
-                &:nth-of-type(2){
+                &:nth-of-type(2) {
                     opacity: 0;
                 }
-                &:last-of-type{
+                &:last-of-type {
                     width: 100%;
-                    transform:  rotate(-26deg);
+                    transform: rotate(-26deg);
                     bottom: 50%;
                 }
             }
@@ -391,16 +391,22 @@ header {
     }
 }
 
-.footer__inner{
+.footer__inner {
     border-top: 1px solid var(--border-color);
 }
 
-@media screen and (min-width: 1201px){
-    .footer__inner{
-        display: grid;
-        grid-template-columns: 1fr 2fr;
+@media screen and (min-width: 1201px) {
+    .footer__inner {
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
     }
-    .footer__contact{
+    .footer__contact {
         border-right: 1px solid var(--border-color);
+
+        h2{
+            font-size: var(--fs38-pc);
+        }
     }
 }
