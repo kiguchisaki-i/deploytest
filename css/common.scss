@@ -3,7 +3,7 @@
     --border-color: #5c7d92;
     --primary: #afe9f3;
 
-    --fs38-pc: clamp(3rem, 4vw, 3.8rem);
+    --fs38-pc: clamp(3.4rem, 4vw, 3.8rem);
 }
 html {
     scroll-behavior: smooth;
@@ -435,7 +435,7 @@ header {
         border-right: 1px solid var(--border-color);
 
         h2 {
-            font-size: var(--fs38-pc);
+            
             margin-bottom: 24px;
         }
 
@@ -453,6 +453,20 @@ header {
             > ul {
                 grid-auto-flow: column;
                 grid-template-rows: repeat(4, 1fr);
+
+                ul{
+                    li{
+                        &:nth-of-type(4){
+                            grid-row: 2 /3;
+                        }
+                        &:nth-of-type(5){
+                            grid-row: 3/4;
+                        }
+                        &:nth-of-type(6){
+                            grid-row: 4/5;
+                        }
+                    }
+                }
             }
         }
     }
@@ -463,6 +477,9 @@ header {
 
 @media screen and (min-width: 769px) {
     .footer__contact {
+        h2{
+            font-size: var(--fs38-pc);
+        }
         p {
             font-size: 1.4rem;
         }
@@ -480,24 +497,28 @@ header {
                 ul {
                     display: contents;
 
-                    li{
-                        &:nth-of-type(4){
-                            grid-row: 2 /3;
-                        }
-                        &:nth-of-type(5){
-                            grid-row: 3/4;
-                        }
-                        &:nth-of-type(6){
-                            grid-row: 4/5;
-                        }
-                    }
+                    
                 }
             }
         }
 
         a {
-            font-size: 1.6rem;
+            font-size: 1.5rem;
         }
     }
     
+}
+
+@media screen and (max-width: 1200px) and (min-width: 769px){
+    .footer__contact{
+        &::after{
+            content: '';
+            display: block;
+            width: calc(100% + 48px);
+            height: 1px;
+            background-color: var(--border-color);
+            position: relative;
+            left: -24px;
+        }
+    }
 }
