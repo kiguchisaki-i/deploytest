@@ -559,10 +559,10 @@ header {
     display: flex;
     align-items: center;
   }
-  .footer__note ul:first-of-type {
+  .footer__note ul li:first-of-type {
     padding-right: 10px;
   }
-  .footer__note ul:nth-of-type(2) {
+  .footer__note ul li:nth-of-type(2) {
     padding-left: 10px;
   }
   .footer__note a {
