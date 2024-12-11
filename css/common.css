@@ -445,15 +445,14 @@ header {
   }
   .footer__note li {
     padding: 0 clamp(24px, 2.67vw, 48px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   .footer__note li:first-of-type {
     padding-left: 0;
   }
   .footer__note a {
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 48px;
     font-size: 1.4rem;
   }

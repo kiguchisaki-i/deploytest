@@ -540,9 +540,6 @@ header {
         }
         li{
             padding: 0 clamp(24px,2.67vw, 48px);
-            display: flex;
-            justify-content: center;
-            align-items: center;
 
             &:first-of-type{
                 padding-left: 0;
@@ -550,6 +547,8 @@ header {
         }
         a{
             display: flex;
+            justify-content: center;
+            align-items: center;
             height: 48px;
             font-size: 1.4rem;
         }
