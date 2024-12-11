@@ -343,17 +343,18 @@ header {
 .footer__inner {
   border-top: 1px solid var(--border-color);
 }
-.footer__inner p, .footer__inner a {
+.footer__inner p,
+.footer__inner a {
   letter-spacing: 0.08em;
 }
 
-.footer__contact > ul ul li {
+.footer__contact nav > ul ul li {
   display: grid;
   align-items: center;
   grid-template-columns: 24px auto;
   gap: 16px;
 }
-.footer__contact > ul ul li::before {
+.footer__contact nav > ul ul li::before {
   content: "";
   display: flex;
   width: 24px;
@@ -376,16 +377,16 @@ header {
   .footer__contact p + p {
     margin-top: 14px;
   }
-  .footer__nav > ul {
+  .footer__nav nav > ul {
     grid-auto-flow: column;
     grid-template-rows: repeat(2, 1fr);
   }
 }
 @media screen and (min-width: 769px) {
-  .footer__nav > ul {
+  .footer__nav nav > ul {
     display: grid;
   }
-  .footer__nav > ul ul {
+  .footer__nav nav > ul ul {
     display: contents;
   }
   .footer__nav a {
