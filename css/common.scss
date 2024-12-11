@@ -424,6 +424,24 @@ header {
     }
 }
 
+.footer__note{
+    border-top: 1px solid var(--border-color);
+
+    li{
+        &:first-of-type{
+            border-right: 1px solid var(--border-color);
+        }
+    }
+
+    a, span{
+        letter-spacing: 0.08em;
+    }
+
+    span{
+        text-transform: uppercase;
+    }
+}
+
 @media screen and (min-width: 1201px) {
     .footer__inner {
         .row {
@@ -507,7 +525,31 @@ header {
             font-size: 1.5rem;
         }
     }
-    
+    .footer__note{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ul{
+            display: flex;
+            align-items: center;
+        }
+        li{
+            padding: 0 48px;
+
+            &:first-of-type{
+                padding-left: 0;
+            }
+        }
+        a{
+            height: 48px;
+            font-size: 1.4rem;
+        }
+        span{
+            font-size: 1.3rem;
+            text-align: right;
+        }
+    }
 }
 
 @media screen and (max-width: 1200px) and (min-width: 769px){
