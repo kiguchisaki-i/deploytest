@@ -453,6 +453,7 @@ header {
             > ul {
                 grid-auto-flow: column;
                 grid-template-rows: repeat(4, 1fr);
+                gap: 32px 16px;
 
                 ul{
                     li{
@@ -488,7 +489,7 @@ header {
         nav {
             > ul {
                 display: grid;
-                gap: 32px 16px;
+                
 
                 li:has(ul){
                     display: contents;
@@ -511,6 +512,18 @@ header {
 
 @media screen and (max-width: 1200px) and (min-width: 769px){
     .footer__contact{
+        padding-top: 54px;
+
+        h2{
+            margin-bottom: 24px;
+        }
+
+        p{
+            & + p{
+                margin-top: 12px;
+            }
+        }
+
         &::after{
             content: '';
             display: block;
@@ -519,6 +532,13 @@ header {
             background-color: var(--border-color);
             position: relative;
             left: -24px;
+            margin-top: 64px;
+        }
+    }
+
+    .footer__nav{
+        > ul{
+            grid-template-rows: repeat(7, 1fr);
         }
     }
 }
