@@ -537,8 +537,14 @@ header {
     }
 
     .footer__nav{
-        > ul{
-            grid-template-rows: repeat(7, 1fr);
+        padding-top: 48px;
+        padding-bottom: 56px;
+        
+        nav{
+            > ul{
+                grid-template-rows: repeat(7, 1fr);
+            }
         }
+        
     }
 }
