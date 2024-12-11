@@ -90,9 +90,44 @@
 @media screen and (min-width: 769px) {
   .index__about a {
     gap: 14px;
+    margin-top: 96px;
+    margin-bottom: 88px;
   }
   .index__about a::after {
     width: 10px;
     height: 10px;
+  }
+}
+.index__map {
+  border-top: 1px solid var(--border-color);
+}
+
+@media screen and (min-width: 769px) {
+  .index__map ul {
+    display: grid;
+    grid-template: 1fr 1px 1fr;
+    gap: 40px;
+  }
+  .index__map li {
+    padding-top: 40px;
+  }
+  .index__map li:first-of-type {
+    padding-right: 40px;
+  }
+  .index__map li:nth-of-type(2) {
+    padding-left: 40px;
+  }
+  .index__map iframe {
+    width: 100%;
+    aspect-ratio: 1.694/1;
+  }
+  .index__map h2 {
+    font-size: 1.8rem;
+  }
+  .index__map p {
+    font-size: 1.4rem;
+  }
+  .index__map p:first-of-type {
+    letter-spacing: 0.08em;
   }
 }/*# sourceMappingURL=style.css.map */
