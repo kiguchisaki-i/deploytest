@@ -491,14 +491,18 @@ header {
     width: min(100%, 480px);
   }
   .footer__nav nav > ul {
-    grid-template-rows: repeat(7, 1fr);
     gap: 32px 0;
-  }
-  .footer__nav nav > ul > li:nth-of-type(4) {
-    grid-row: 4/8;
   }
   .footer__nav nav > ul ul li {
     padding-left: 24px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .footer__nav nav > ul {
+    grid-template-rows: repeat(7, 1fr);
+  }
+  .footer__nav nav > ul > li:nth-of-type(4) {
+    grid-row: 4/8;
   }
 }
 @media screen and (max-width: 768px) {
@@ -524,5 +528,8 @@ header {
     position: relative;
     left: -18px;
     margin-top: clamp(32px, 7.11vw, 40px);
+  }
+  .footer__nav a {
+    font-size: clamp(1.2rem, 2.67vw, 1.3rem);
   }
 }/*# sourceMappingURL=common.css.map */
