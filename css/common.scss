@@ -2,6 +2,8 @@
     --font-color: #06314d;
     --border-color: #5c7d92;
     --primary: #afe9f3;
+
+    --fs38-pc: clamp(3rem, 4vw, 3.8rem);
 }
 html {
     scroll-behavior: smooth;
@@ -26,6 +28,11 @@ body {
     &::before,
     &::after {
         display: block;
+    }
+
+    &.en{
+        font-family: "Libre Baskerville", serif;
+        font-weight: 400;
     }
 }
 picture,
@@ -381,5 +388,19 @@ header {
                 }
             }
         }
+    }
+}
+
+.footer__inner{
+    border-top: 1px solid var(--border-color);
+}
+
+@media screen and (min-width: 1201px){
+    .footer__inner{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .footer__contact{
+        border-right: 1px solid var(--border-color);
     }
 }
