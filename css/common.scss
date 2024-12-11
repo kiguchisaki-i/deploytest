@@ -4,6 +4,7 @@
     --primary: #afe9f3;
 
     --fs38-pc: clamp(3.4rem, 4vw, 3.8rem);
+    --fs32-sp: clamp(2.6rem, 6.67vw, 3.2rem)
 }
 html {
     scroll-behavior: smooth;
@@ -33,6 +34,7 @@ body {
     &.en {
         font-family: "Libre Baskerville", serif;
         font-weight: 400;
+        letter-spacing: 0.04em;
     }
 }
 picture,
@@ -616,6 +618,9 @@ header {
 
 @media screen and (max-width: 768px){
     .footer__contact{
+        h2{
+            font-size: var(--fs32-sp);
+        }
         &::after{
             content: '';
             display: block;
