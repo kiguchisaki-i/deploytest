@@ -556,17 +556,26 @@ header {
     padding: 24px 0;
   }
   .footer__note ul {
-    display: grid;
+    display: flex;
     align-items: center;
+  }
+  .footer__note ul:first-of-type {
+    padding-right: 10px;
+  }
+  .footer__note ul:nth-of-type(2) {
+    padding-left: 10px;
   }
   .footer__note a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: clamp(24px, 6.67vw, 32px);
-    font-size: 1.2rem;
+    height: clamp(22px, 6.67vw, 32px);
+    font-size: clamp(1.1rem, 2.44vw, 1.2rem);
   }
   .footer__note span {
+    display: inline-block;
     font-size: 1.1rem;
+    margin-top: 14px;
+    text-align: center;
   }
 }/*# sourceMappingURL=common.css.map */
