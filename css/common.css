@@ -276,6 +276,7 @@ header {
     padding: 0 18px;
     display: flex;
     flex-direction: column;
+    visibility: hidden;
   }
   .header__info-list li:last-of-type a {
     border-bottom: 0;
@@ -289,6 +290,7 @@ header {
   .header__info-list.is-active {
     z-index: 1;
     opacity: 1;
+    visibility: visible;
   }
   .header__shopping-list {
     margin-left: auto;
@@ -495,5 +497,16 @@ header {
   }
   .footer__nav nav > ul ul li {
     padding-left: 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__contact::after {
+    content: "";
+    display: block;
+    width: calc(100% + 36px);
+    height: 1px;
+    background-color: var(--border-color);
+    position: relative;
+    left: -18px;
   }
 }/*# sourceMappingURL=common.css.map */

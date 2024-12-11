@@ -311,6 +311,7 @@ header {
         padding: 0 18px;
         display: flex;
         flex-direction: column;
+        visibility: hidden;
 
         li {
             &:last-of-type {
@@ -330,6 +331,7 @@ header {
         &.is-active {
             z-index: 1;
             opacity: 1;
+            visibility: visible;
         }
     }
     .header__shopping-list {
@@ -609,5 +611,19 @@ header {
             }
         }
         
+    }
+}
+
+@media screen and (max-width: 768px){
+    .footer__contact{
+        &::after{
+            content: '';
+            display: block;
+            width: calc(100% + 36px);
+            height: 1px;
+            background-color: var(--border-color);
+            position: relative;
+            left: -18px;
+        }
     }
 }
