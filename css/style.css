@@ -36,6 +36,10 @@
   background-color: var(--font-color);
 }
 
+.index__news {
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
 .index__news .row {
   display: flex;
   align-items: center;
@@ -51,8 +55,6 @@
 @media screen and (min-width: 769px) {
   .index__news {
     padding: 32px 0;
-    border-top: 1px solid var(--border-color);
-    border-bottom: 1px solid var(--border-color);
     margin-top: 8px;
   }
   .index__news .row {
