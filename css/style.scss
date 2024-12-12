@@ -132,6 +132,7 @@
         ul{
             display: grid;
             grid-template-columns: repeat(6, 1fr);
+            border-left: 1px solid var(--border-color);
         }
         li{
             width: 100%;
@@ -140,7 +141,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 1.8rem;
+            font-size: clamp(1.4rem, 1.25vw, 1.8rem);
+            height: clamp(40px, 5vw, 48px);
         }
     }
 }
