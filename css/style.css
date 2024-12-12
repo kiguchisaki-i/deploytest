@@ -95,6 +95,9 @@
   display: flex;
   align-items: center;
 }
+.index__category li:nth-of-type(n+6) {
+  display: none;
+}
 
 @media screen and (min-width: 769px) {
   .index__category .row {
@@ -110,6 +113,7 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     border-left: 1px solid var(--border-color);
+    padding: 32px 0;
   }
   .index__category li {
     width: 100%;
