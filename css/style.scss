@@ -144,6 +144,10 @@
         }
         li{
             width: 100%;
+
+            &:not(:first-of-type){
+                border-left: 1px solid var(--border-color);
+            }
         }
         a{
             display: flex;

@@ -119,6 +119,9 @@
   .index__category li {
     width: 100%;
   }
+  .index__category li:not(:first-of-type) {
+    border-left: 1px solid var(--border-color);
+  }
   .index__category a {
     display: flex;
     justify-content: center;
