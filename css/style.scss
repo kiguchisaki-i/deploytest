@@ -118,7 +118,7 @@
     }
 
     li{
-        &:nth-of-type(n+6){
+        &:nth-of-type(n+7){
             display: none;
         }
     }
@@ -136,6 +136,7 @@
             padding-right: clamp(24px, 2vw, 40px);
         }
         ul{
+            width: 100%;
             display: grid;
             grid-template-columns: repeat(6, 1fr);
             border-left: 1px solid var(--border-color);
