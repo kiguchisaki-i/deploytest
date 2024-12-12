@@ -4,6 +4,7 @@
   --primary: #afe9f3;
   --fs38-pc: clamp(3.4rem, 4vw, 3.8rem);
   --fs32-sp: clamp(2.6rem, 6.67vw, 3.2rem);
+  --fs22-sp: clamp(1.6rem, 4vw, 2.2rem);
 }
 
 html {
