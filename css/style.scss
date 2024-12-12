@@ -89,7 +89,7 @@
     }
 }
 
-@media screen and (min-width: 769px){
+@media screen and (max-width: 768px){
     .index__news{
         h2{
             font-size: var(--fs22-sp);
