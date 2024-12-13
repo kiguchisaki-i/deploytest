@@ -116,6 +116,9 @@
     picture, img{
         width: 100%;
     }
+    p{
+        line-height: 100%;
+    }
 }
 
 @media screen and (min-width: 769px){
@@ -168,7 +171,6 @@
         p{
             font-size: 1.4rem;
             margin-top: 12px;
-            line-height: 100%;
         }
     }
 }
@@ -176,6 +178,10 @@
 @media screen and (max-width: 768px){
     .index__new-list{
         padding: 18px 0;
+
+        h2{
+            font-size: var(--fs22-sp);
+        }
     }
 }
 
@@ -187,7 +193,6 @@
             gap: clamp(40px, 8.89vw, 48px) clamp(24px, 5.33vw, 32px);
         }
         h2{
-            font-size: var(--fs22-sp);
             margin-top: 16px;
         }
         p{
@@ -205,7 +210,11 @@
             gap: clamp(32px, 10.67vw, 48px);
         }
         h2{
+            margin-top: 14px;
+        }
+        p{
             font-size: 1.2rem;
+            margin-top: 6px;
         }
     }
 }
