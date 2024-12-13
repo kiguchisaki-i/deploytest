@@ -194,6 +194,9 @@
   border-right: 1px solid var(--font-color);
   transform: rotate(45deg);
 }
+.index__about picture, .index__about img {
+  width: 100%;
+}
 
 @media screen and (min-width: 769px) {
   .index__about a {
