@@ -160,8 +160,11 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 12px 0;
   }
-  .index__category li:not(:first-of-type), .index__category li:not(:nth-of-type(4)) {
+  .index__category li {
     border-left: 1px solid var(--border-color);
+  }
+  .index__category li:first-of-type, .index__category li:nth-of-type(4) {
+    border-left: none;
   }
   .index__category a {
     font-size: 1.3rem;
@@ -171,6 +174,9 @@
   .index__category ul {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px 0;
+  }
+  .index__category li:nth-of-type(even) {
+    border-left: 1px solid var(--border-color);
   }
   .index__category a {
     font-size: 1.1rem;

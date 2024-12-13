@@ -196,8 +196,10 @@
             gap: 12px 0;
         }
         li{
-            &:not(:first-of-type), &:not(:nth-of-type(4)){
-                border-left: 1px solid var(--border-color);
+            border-left: 1px solid var(--border-color);
+
+            &:first-of-type, &:nth-of-type(4){
+                border-left: none;
             }
         }
         a{
@@ -211,6 +213,11 @@
         ul{
             grid-template-columns: repeat(2, 1fr);
             gap: 10px 0;
+        }
+        li{
+            &:nth-of-type(even){
+                border-left: 1px solid var(--border-color);
+            }
         }
         a{
             font-size: 1.1rem;
