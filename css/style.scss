@@ -165,8 +165,42 @@
 
 @media screen and (max-width: 768px) {
     .index__category {
+        .row{
+            gap: clamp(14px, 3.11vw, 20px);
+        }
         h2 {
             font-size: var(--fs22-sp);
+            padding-right: clamp(14px, 3.11vw, 20px);
+        }
+        ul{
+            display: grid;
+        }
+        li{
+            width: 100%;
+        }
+        a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 451px){
+    .index__category{
+        ul{
+            grid-template-columns: repeat(3, 1fr);
+        }
+        li{
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 450px){
+    .index__category{
+        ul{
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 }
