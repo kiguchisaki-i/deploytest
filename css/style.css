@@ -152,6 +152,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: clamp(16px, 4vw, 22px);
   }
 }
 @media screen and (max-width: 768px) and (min-width: 451px) {
@@ -161,10 +162,16 @@
   .index__category li {
     width: 100%;
   }
+  .index__category a {
+    font-size: 1.3rem;
+  }
 }
 @media screen and (max-width: 450px) {
   .index__category ul {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .index__category a {
+    font-size: 1.2rem;
   }
 }
 .index__about a {
