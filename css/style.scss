@@ -132,9 +132,29 @@
                 height: 100%;
                 background-color: var(--border-color);
             }
+
+            &::before{
+                order: 2;
+            }
+
+            &::after{
+                order: 4;
+            }
         }
         li{
             padding: 40px 0 64px;
+
+            &:first-of-type{
+                order: 1;
+            }
+
+            &:nth-of-type(2){
+                order: 3;
+            }
+
+            &:nth-of-type(3){
+                order: 5;
+            }
             
             &:nth-of-type(4){
                 display: none;

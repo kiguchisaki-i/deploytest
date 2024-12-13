@@ -108,8 +108,23 @@
     height: 100%;
     background-color: var(--border-color);
   }
+  .index__new-list ul::before {
+    order: 2;
+  }
+  .index__new-list ul::after {
+    order: 4;
+  }
   .index__new-list li {
     padding: 40px 0 64px;
+  }
+  .index__new-list li:first-of-type {
+    order: 1;
+  }
+  .index__new-list li:nth-of-type(2) {
+    order: 3;
+  }
+  .index__new-list li:nth-of-type(3) {
+    order: 5;
   }
   .index__new-list li:nth-of-type(4) {
     display: none;
