@@ -158,9 +158,10 @@
 @media screen and (max-width: 768px) and (min-width: 451px) {
   .index__category ul {
     grid-template-columns: repeat(3, 1fr);
+    gap: 12px 0;
   }
-  .index__category li {
-    width: 100%;
+  .index__category li:not(:first-of-type), .index__category li:not(:nth-of-type(4)) {
+    border-left: 1px solid var(--border-color);
   }
   .index__category a {
     font-size: 1.3rem;
@@ -169,9 +170,10 @@
 @media screen and (max-width: 450px) {
   .index__category ul {
     grid-template-columns: repeat(2, 1fr);
+    gap: 10px 0;
   }
   .index__category a {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 .index__about a {
