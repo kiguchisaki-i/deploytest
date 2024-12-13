@@ -153,6 +153,11 @@
   }
   .index__new-list h2 {
     font-size: var(--fs22-sp);
+    margin-top: 16px;
+  }
+  .index__new-list p {
+    font-size: 1.3rem;
+    margin-top: 8px;
   }
 }
 @media screen and (max-width: 450px) {
