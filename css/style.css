@@ -140,10 +140,16 @@
     line-height: 100%;
   }
 }
+@media screen and (max-width: 768px) {
+  .index__new-list {
+    padding: 18px 0;
+  }
+}
 @media screen and (max-width: 768px) and (min-width: 451px) {
   .index__new-list ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: clamp(40px, 8.89vw, 48px) clamp(24px, 5.33vw, 32px);
   }
   .index__new-list h2 {
     font-size: var(--fs22-sp);
@@ -153,6 +159,7 @@
   .index__new-list ul {
     display: flex;
     flex-direction: column;
+    gap: clamp(32px, 10.67vw, 48px);
   }
   .index__new-list h2 {
     font-size: 1.2rem;
