@@ -94,6 +94,7 @@
 .index__category .row {
   display: flex;
   align-items: center;
+  padding-right: 0;
 }
 .index__category h2 {
   display: flex;
