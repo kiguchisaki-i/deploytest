@@ -99,7 +99,7 @@
   .index__new-list ul {
     display: grid;
     grid-template-columns: 1fr 1px 1fr 1px 1fr;
-    gap: 40px;
+    gap: clamp(24px, 2.67vw, 40px);
   }
   .index__new-list ul::before, .index__new-list ul::after {
     content: "";
@@ -115,7 +115,7 @@
     order: 4;
   }
   .index__new-list li {
-    padding: 40px 0 64px;
+    padding: clamp(24px, 2.67vw, 40px) 0 clamp(42px, 4vw, 64px);
   }
   .index__new-list li:first-of-type {
     order: 1;
@@ -132,10 +132,12 @@
   .index__new-list h2 {
     font-size: 1.8rem;
     margin-top: 24px;
+    line-height: 100%;
   }
   .index__new-list p {
     font-size: 1.4rem;
     margin-top: 12px;
+    line-height: 100%;
   }
 }
 .index__category {
