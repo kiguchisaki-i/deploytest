@@ -87,6 +87,34 @@
     font-size: 1.2rem;
   }
 }
+.index__new-list li {
+  display: flex;
+  flex-direction: column;
+}
+.index__new-list picture, .index__new-list img {
+  width: 100%;
+}
+
+@media screen and (min-width: 769px) {
+  .index__new-list ul {
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr 1px 1fr;
+    gap: 40px;
+  }
+  .index__new-list ul::before, .index__new-list ul::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: var(--border-color);
+  }
+  .index__new-list li {
+    padding: 40px 0 64px;
+  }
+  .index__new-list li:nth-of-type(4) {
+    display: none;
+  }
+}
 .index__category {
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
