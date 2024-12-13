@@ -142,6 +142,8 @@
   }
   .index__category ul {
     display: grid;
+    width: 100%;
+    padding: 16px 0;
   }
   .index__category li {
     width: 100%;
